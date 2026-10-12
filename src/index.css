@@ -419,10 +419,134 @@ a {
   padding-top: 22px;
 }
 
+/* ---------- education ---------- */
+.edu {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.timeline {
+  display: grid;
+  gap: 32px;
+  border-left: 1px solid var(--border);
+  padding-left: 28px;
+}
+
+.timeline__item {
+  position: relative;
+}
+
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  left: -33px;
+  top: 7px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.timeline__period {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-faint);
+}
+
+.timeline__title {
+  font-size: 1.1rem;
+  margin-top: 4px;
+}
+
+.timeline__org {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-top: 2px;
+}
+
+.timeline .card__highlights {
+  margin-top: 12px;
+}
+
+.edu__side {
+  display: grid;
+  gap: 20px;
+}
+
+.certs {
+  display: grid;
+  gap: 14px;
+}
+
+.cert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cert__name {
+  display: block;
+  font-size: 0.92rem;
+}
+
+.cert__meta {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  margin-top: 2px;
+}
+
+.langs {
+  display: grid;
+  gap: 16px;
+}
+
+.lang__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 0.9rem;
+  margin-bottom: 7px;
+}
+
+.lang__level {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+.meter {
+  display: block;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
 /* ---------- contact ---------- */
 .contact {
   text-align: center;
   padding: 112px 0;
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
 }
 
 .contact__title {
@@ -494,6 +618,11 @@ a {
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .edu {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .card--featured {

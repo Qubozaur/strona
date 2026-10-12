@@ -4,10 +4,10 @@ import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
+import Education from './components/Education.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
-// Start from a saved choice, fall back to the operating system preference.
 function initialTheme() {
   const saved = localStorage.getItem('theme')
   if (saved === 'dark' || saved === 'light') return saved
@@ -19,8 +19,6 @@ function initialTheme() {
 
 export default function App() {
   const [theme, setTheme] = useState(initialTheme)
-
-  // The stylesheet reads data-theme on the root element.
   useEffect(() => {
     document.documentElement.dataset.theme = theme
     localStorage.setItem('theme', theme)
@@ -37,6 +35,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Education />
         <Contact />
       </main>
       <Footer />

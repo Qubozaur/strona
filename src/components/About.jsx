@@ -17,9 +17,9 @@ export default function About() {
             <div className="fact__value">{profile.location}</div>
           </li>
           <li className="fact">
-            <div className="fact__label">Focus</div>
+            <div className="fact__label">Studying</div>
             <div className="fact__value">
-              Machine learning, NLP, backend APIs
+              Computer Science, Bialystok University of Technology
             </div>
           </li>
           <li className="fact">
@@ -28,6 +28,16 @@ export default function About() {
               <a href={`mailto:${profile.email}`}>{profile.email}</a>
             </div>
           </li>
+          {profile.phone && (
+            <li className="fact">
+              <div className="fact__label">Phone</div>
+              <div className="fact__value">
+                <a href={`tel:${profile.phone.replace(/\s/g, '')}`}>
+                  {profile.phone}
+                </a>
+              </div>
+            </li>
+          )}
           <li className="fact">
             <div className="fact__label">Open to</div>
             <div className="fact__value">Internships, junior roles</div>

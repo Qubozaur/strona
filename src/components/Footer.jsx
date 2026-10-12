@@ -12,6 +12,9 @@ export default function Footer() {
           <a href={profile.linkedin} target="_blank" rel="noreferrer">
             LinkedIn
           </a>
+          <a href={profile.microsoftLearn} target="_blank" rel="noreferrer">
+            Microsoft Learn
+          </a>
           <a href={`mailto:${profile.email}`}>Email</a>
         </div>
       </div>

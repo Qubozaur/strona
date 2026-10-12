@@ -24,7 +24,16 @@ export function GithubIcon(props) {
 export function LinkedinIcon(props) {
   return (
     <svg {...base} {...props} fill="currentColor" stroke="none">
-      <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM2.4 21h5.16V9.5H2.4V21Zm7.74-11.5V21h5.16v-6.2c0-1.64.31-3.22 2.34-3.22 2 0 2.03 1.87 2.03 3.32V21H24.8v-7.2c0-4.3-.92-6.6-4.78-6.6-1.85 0-3.1 1.02-3.6 1.98h-.07V9.5h-4.21Z" />
+      <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 8.98h4V21H3V8.98ZM9.5 8.98h3.83v1.64h.05c.53-1 1.84-2.06 3.78-2.06 4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21h-4V8.98Z" />
+    </svg>
+  )
+}
+
+export function AwardIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="9" r="6" />
+      <path d="m8.2 14.3-1.7 6.4 5.5-2.9 5.5 2.9-1.7-6.4" />
     </svg>
   )
 }
